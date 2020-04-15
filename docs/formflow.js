@@ -67,7 +67,7 @@ function nextQuestion(currentQuestion) {
     }
   }
 
-  $(nextDiv).find(".btn, div, p, li, select").css({ opacity: 1 });
+  $(nextDiv).find(".btn, div, p, li, select, small").css({ opacity: 1 });
   $(nextDiv).find('.btn, input').prop('disabled', false);
   $(nextDiv).find('.answered').addClass("please-answer");
 
@@ -155,6 +155,10 @@ $(document).ready(function () {
     }
     qdiv.prepend(arrow);
 
+    if (q.helptext) {
+      qdiv.append($("<small>").attr("class", "form-text text-muted").text(lang_src.helptext || q.helptext));
+    }
+
     if (q.input) {
       var formplace = $("<div>").attr("class", "form-group");
       qdiv.append(formplace);
@@ -199,7 +203,7 @@ $(document).ready(function () {
     var q = this;
     if (index) {
       // hidden question styles
-      $(q).find('.btn, div, p, li, select').css({ opacity: 0.4 });
+      $(q).find('.btn, div, p, li, select, small').css({ opacity: 0.4 });
       $(q).find('.btn, input').prop('disabled', true);
     } else {
       // very first question (must be visible for strters)
