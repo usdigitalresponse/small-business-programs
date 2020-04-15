@@ -44,13 +44,13 @@ var questions = {
 
   "since_february": {
     html: "<p> \
-      Has your business been in operation since <strong>February 15</strong>, 2020? \
+      Did your organization start operating before <strong>February 15</strong>, 2020? \
     </p>",
     // hard_pass: false // if the business is too recent or inactive
   },
 
   "business_type": {
-    html: "<p>Which type <strong>best describes</strong> your business?</p>",
+    html: "<p>Which phrase best describes your business?</p>",
     select: {
       options: ["Independent Contractor", "Self Employed", "Non-Profit - 501(c)(3)",
       "For-Profit Small Business", "Veterans Organization - 501(c)(19)",
@@ -75,7 +75,7 @@ var questions = {
   },
 
   "existing_sba": {
-    html: "<p>Does your organization have any non-disaster SBA loans, in particular 7(a), 504, and/or microloans?</p>"
+    html: "<p>Does your organization have any non-disaster SBA loans, like 7(a), 504, or microloans?</p>"
   },
 
   "Revenue": {
@@ -84,11 +84,10 @@ var questions = {
   },
   "revenue_2019": {
     html: "<p> \
-      Please estimate your business' annual revenue for the year of 2019: \
+      Estimate your organization's annual revenue in 2019. \
     </p>",
     input: {
       name: "2019_revenue",
-      // label: "Total number of FTEs",
       examples: "$50000; 3,000,000"
     },
     skippable: true
@@ -101,7 +100,7 @@ var questions = {
 
   "fico": {
     html: "<p> \
-      Do you, another owner, or your business have a minimum FICO score of at least 600? \
+      Does your organization or one of its owners have a FICO score of at least 600? \
     </p>",
     skippable: "Not Sure",
     es: {
@@ -119,19 +118,27 @@ var questions = {
   },
 
   "for_workers": {
-    html: "<p>Will the funds be used for the following purposes:</p> \
+    html: "<p>Will the funds be used for any of the following?</p> \
       <ul> \
-        <li>retain workers and maintain payroll</li> \
-        <li>to make mortgage, lease, and utility payments</li> \
+        <li>Retaining workers and maintaining payroll.</li> \
+        <li>Making mortgage, lease, and utility payments.</li> \
       </ul>"
   },
 
   "paperwork": {
-    html: "<p>Are you able to provide documentation that verifies the number of full-time equivalent employees on payroll and the dollar amounts of payroll costs, covered mortgage interest payments, covered rent payments, and covered utilities.</p>"
+    html: "<p>Do you have documentation for all the information below?</p> \
+      <ul> \
+       <li>The number of full-time equivalent employees on your payroll.</li> \
+       <li>The dollar amounts of payroll costs.</li> \
+       <li>Covered mortgage interest payments.</li> \
+       <li>Covered rent payments.</li> \
+       <li>Covered utilities.</li> \
+      </ul>"
   },
 
   "no_other_lenders": {
-    html: "<p>Has the business owner tried and failed to get funds from other financial lenders? (i.e. Banks and credit unions, short term business loans, personal loans etc.)</p>"
+    html: "<p>Have the owners tried and failed to get funds from other financial lenders?</p>",
+    helptext: "Other lenders might include banks and credit unions, short term business loans, or personal loans."
   },
 
   "Business Types": {
@@ -141,33 +148,30 @@ var questions = {
   "illegal_business_SBA": {
     // hard_pass: true, // if saying yes to illegal business
     html: "<p> \
-      Confim your business is <strong>NOT</strong> any of the following: \
+      Please confirm your organization is not: \
       <span class=\"badge badge-success\">Federal SBA Programs</span> \
     </p> \
     <ul> \
-      <li>Related to gambling or gaming activities</li> \
-      <li>Agricultural Enterprises (i.e. the primary activity of the business, including its affiliates, is \
-        as \
-        defined in Section 18(b)(1) of the Small Business Act)</li> \
-      <li>Religious organizations</li> \
-      <li>Charitable organizations</li> \
-      <li>Businesses considered hobbies</li> \
-      <li>Government-owned concerns</li> \
-      <li>Real estate developers - establishments primarily engaged in subdividing real property into lots \
-        and \
-        developing it for resale on their own account</li> \
+      <li>Related to gambling or gaming activities.</li> \
+      <li>Involved in any farming or agricultural industry. (This includes producing food and fiber, or ranching and raising livestock or fish.)</li> \
+      <li>A religious organization.</li> \
+      <li>A charitable organization.</li> \
+      <li>A hobby.</li> \
+      <li>A government-owned concern.</li> \
+      <li>A real estate developer.</li> \
     </ul>",
     confirm_only: true,
     yes_text: "Confirm"
   },
   "illegal_business_eidl": {
-    html: "<p>Can you confirm that</p>\
+    html: "<p>Please confirm your organization:</p>\
     <ul> \
-    <li>The organization is <strong>not</strong> engaged in any illegal activity (as defined by Federal guidelines).</li> \
-    <li>No principal of the organization with a 50 percent or greater ownership interest is more than sixty (60) days delinquent on child support obligations.</li> \
-    <li>The organization does not present live performances of a prurient sexual nature or derive directly or indirectly more than de minimis gross revenue through the sale of products or services, or the presentation of any depictions or displays, of a sexual nature.</li> \
-    <li>The organization is not in the business of lobbying</li> \
-    <li>The organization cannot be a state, local, or municipal government entity and cannot be a member of Congress.</li> \
+    <li>Is not engaging in illegal activity under Federal law.</li> \
+    <li>Has no principals who own at least 50% of the company that are over 60 days delinquent on child support obligations.</li> \
+    <li>Does not present live performances of a prurient sexual nature.</li> \
+    <li>Does not make money from selling products, services, or presentations of a prurient sexual nature.</li>\
+    <li>Is not in the lobbying business.</li> \
+    <li>Is not a member of Congress or a state, local, or municipal government entity.</li> \
     </ul>",
     confirm_only: true,
     yes_text: "Confirm"

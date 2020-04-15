@@ -24,19 +24,6 @@ var questions = {
       As a courtesy, the NJEDA is offering this screening tool (the “Eligibility Wizard”) \
       that lists emergency assistance programs that you may decide to consider based \
       upon information you provide about your organization. \
-    </p> \
-    <p> \
-      To apply for a program, you need to apply through the appropriate administering \
-      agency. The Eligibility Wizard will provide suggestions on how to apply for any \
-      benefit on this website but cannot guarantee eligibility and does not reserve any funding \
-      or a place in any application queue. The administering agency \
-      will determine all eligibility requirements upon your submission of an \
-      application to that agency for the respective program. \
-    </p> \
-    <p> \
-      The information you share for purposes of this Eligibility Wizard will be \
-      anonymous and may be shared with NJ State agencies to improve access to \
-      benefits and programs. \
     </p>",
     hard_pass: false, // if saying no to agreement
     yes_text: "Agree",
@@ -79,13 +66,12 @@ var questions = {
   },
   "q0_relationship_with_njeda": {
     html: "<p> \
-      Does your organization have an existing financial relationship \
-      with NJEDA, such as a loan or incentive agreement? \
+      Does your organization already have a financial relationship with NJEDA, like a loan or incentive agreement? \
     </p>"
   },
   "q7_in_operation_more_than_year": {
     html: "<p> \
-      Has your business been in operation for one year or more? \
+      Has your business operated for at least a year? \
     </p>"
   },
 
@@ -105,7 +91,7 @@ var questions = {
   },
   "q3_is_home_based": {
     html: "<p> \
-      Is your business home-based? \
+      Is your organization based inside a home? \
     </p>",
     yes_hides: ["detail_qs"]
   },
@@ -141,8 +127,8 @@ var questions = {
       Is your organization classified in one of the following industries? \
       <ul> \
         <li>Technology</li> \
-        <li>Life Sciences</li> \
-        <li>Clean Energy</li> \
+        <li>Life sciences</li> \
+        <li>Clean energy</li> \
         <li>Offshore wind</li> \
         <li>Advanced transportation and logistics (does not include traditional logistics such as trucking, \
           wholesale, or warehousing)</li> \
@@ -168,21 +154,17 @@ var questions = {
 
   "q8_number_of_fte": {
     html: "<p> \
-      How many W-2 full time equivalent (FTE) employees does \
-      your business have? \
+      Next, we'll ask you how many W-2 full-time equivalent (FTE) employees your organization has. Here's how to calculate that number: \
     </p> \
     <ul> \
-      <li>Count 1 FTE for each full-time employee</li> \
-      <li>Only count yourself as 1 FTE if you treat yourself as a W-2 employee of the company</li> \
-      <li>For each part-time W-2 employee, estimate the number of hours \
-        worked per week, divide that number by 35, and that is the \
-        fractional FTE estimate for that employee. \
-      <li>Do not include 1099 employees in this calculation</li> \
-    </ul>",
+      <li>Each full-time W-2 employee is 1 FTE. Only include yourself in this number if you are a W-2 employee of the company.</li> \
+      <li>For each part-time W-2 employee, estimate the number of hours they work per week. Then, divide that number by 35 and add it to the total.</li> \
+      <li>You should leave out 1099 employees.</li> \
+    </ul> \
+    <p>If you have part-time employees, this number might be a decimal like 10.5 or 4.32.</p>",
     input: {
       name: "fte",
-      label: "Total number of FTEs",
-      examples: "1, 10.5, 15"
+      label: "How many W-2 FTE employees does your organization have?"
     },
     skippable: true,
     es: {
@@ -194,18 +176,15 @@ var questions = {
   "q4_more_than_50pct_empl_in_nj": {
     classes: "physical_nj entrepreneur",
     html: "<p> \
-      Does your business have <strong>a minimum of 50% of employees in \
-        New Jersey</strong>, as reported on your NJ WR-30 at year end 2019? \
+      Are at least half of the employees on your organization's NJ WR-30 located in New Jersey? \
     </p>"
   },
   "q5_primary_location_in_nj": {
     classes: "physical_nj entrepreneur",
     html: "<p> \
-      Is your organization's \
-      <strong>primary location / corporate headquarters in New Jersey</strong>, \
-      including at least one C-suite member with a \
-      principal office in New Jersey? \
-    </p>"
+      Is your organization based in New Jersey? \
+    </p>",
+    helptext: "At least one C-suite member should have a main office in the state."
   },
 
   "Revenue": {
@@ -214,7 +193,7 @@ var questions = {
   },
   "q9_annual_revenue_2019": {
     html: "<p> \
-      Please estimate your business' annual revenue for the year of 2019? \
+      Estimate your organization's annual revenue in 2019. \
     </p>",
     input: {
       name: "2019_revenue",
@@ -226,7 +205,7 @@ var questions = {
   "q10_annual_revenue_12mo_trailing": {
     classes: "entrepreneur",
     html: "<p> \
-      Please estimate your business' 12-month trailing revenue as of March 9, 2020? \
+      Estimate your organization's revenue from March 9, 2019 to March 9, 2020. \
     </p>",
     input: {
       name: "12mo_revenue",
@@ -242,13 +221,12 @@ var questions = {
   "q16_has_tax_returns": {
     classes: "detail_qs physical_nj",
     html: "<p> \
-      Do you have financial statements that are \
-      CPA prepared, management prepared, or filed copies of business tax returns? \
+      Do you have financial statements prepared by CPAs or management, or filed copies of business tax returns? \
     </p>"
   },
   "q18_has_acceptable_fico": {
     html: "<p> \
-      Do you, another owner, or your business have a minimum FICO score of at least 600? \
+      Does your organization or one of its owners have a FICO score of at least 600? \
     </p>",
     skippable: "Not Sure",
     es: {
@@ -258,9 +236,7 @@ var questions = {
   "q19_personal_guaruntee": {
     classes: "for-profit",
     html: "<p> \
-      If you are a for-profit business, would all owners with more than 10% ownership in the company be \
-      willing to provide \
-      personal guarantees for any emergency loans? \
+      Would everyone with more than a 10% ownership stake in your business be willing to provide personal guarantees for any loans? \
     </p>"
   },
 
@@ -270,13 +246,12 @@ var questions = {
   },
   "q17_in_good_standing_with_nj_taxes": {
     html: "<p> \
-      Are you able to certify that you are in good standing with the \
-      New Jersey Department of Taxation? \
-      <br /> \
-      <em>Note: you may be required to provide a Tax Clearance \
-        Certificate for certain emergency assistance programs.</em> \
+      Can you certify that you are in good standing with the New Jersey Department of Taxation? \
     </p>",
     skippable: "Not Sure",
+    helptext: "You may be required to provide a \
+      <a href='https://www.state.nj.us/treasury/taxation/busasst.shtml'>Tax Clearance Certificate</a> \
+       for certain emergency assistance programs.",
     es: {
       skippable: "Pasar"
     }
@@ -284,13 +259,9 @@ var questions = {
   "q23_in_good_standing_with_nj_dept_labor": {
     html: "<p> \
       Are you in good standing with the New Jersey Department of Labor? \
-      <br /> \
-      <em>Note, you will be required to be in good standing with the New Jersey \
-        Department of Labor to be eligible for State assistance. This means not \
-        having unpaid unemployment holdings, unpaid fees, or outstanding employee \
-        wage and hour violations.</em> \
     </p>",
     skippable: "Not Sure",
+    helptext: "To be in good standing, you should have no unpaid unemployment holdings, unpaid fees, or outstanding employee wage and hour violations.",
     es: {
       skippable: "Pasar"
     }
@@ -299,80 +270,62 @@ var questions = {
   "q20_will_not_layoff": {
     classes: "detail_qs physical_nj",
     html: "<p> \
-      Are you, your chief executive officer, or equivalent able to certify that: \
-      <br /> \
-      The organization will make its \
-      <strong>best-effort not to furlough or lay off any individuals</strong> \
-      from the time of application through the end of the COVID-19 outbreak period; businesses that have \
-      already furloughed or laid off workers \
-      must <strong>make a best-effort to re-hire those workers as soon as possible</strong>. \
-    </p>"
+      To receive support, your organization: \
+      <ul> \
+        <li>Will make its best effort not to furlough or lay off anyone from the time you apply for the loan through the end of the COVID-19 outbreak period.</li> \
+        <li>Will make its best effort to re-hire any workers it has already furloughed or laid off as soon as possible.</li> \
+        </ul>"
   },
   "q22_has_material_need": {
     classes: "detail_qs physical_nj",
     html: "<p> \
-      Are you, your chief executive officer, or equivalent able to certify that: \
-      <br /> \
-      Your business has \
-      <strong>a material financial need that cannot be overcome without the use of emergency relief \
-        funds</strong> \
-      at this time (e.g., does not have significant cash reserves that can support your operations during \
-      this \
-      period of economic disruption) \
-    </p>"
+      To receive support, your organization must have no other way to overcome this impact other than these emergency relief funds. In other words, you must lack the cash reserves to support your operations. \
+      </p> \
+      <p>Can you, your CEO, or their equal certify this is correct?</p>"
   },
   "q21_has_covid_impact": {
     classes: "detail_qs physical_nj",
-    html: "<p> \
-      Are you, your chief executive officer, or equivalent able to certify that: \
-      <br /> \
-      <strong>Your business been negatively impacted by the Covid-19 outbreak?</strong> \
-      Note: negative impact is defined as a business that has been temporarily shut down, has been required \
-      to \
-      reduce hours, has had at least a 20% drop in revenue, has been materially impacted by employees who \
-      cannot work due to the outbreak, or has a supply chain that has materially been disrupted and \
-      therefore \
-      slowed firm-level production. \
-    </p>"
+    html: "<p>To receive support, the COVID-19 outbreak must negatively impact your organization. A negative impact might look like a:</p> \
+      <ul> \
+        <li>Temporary shut-down</li> \
+        <li>Need to reduce hours</li> \
+        <li>Drop in revenue over 20%</li> \
+        <li>Material impact from employees who can't work</li> \
+        <li>Disrupted supply chain that slowed down production</li> \
+      </ul> \
+      <p>Can you, your CEO, or their equal certify this is correct?</p>"
   },
 
   "q14_is_prohibited_type": {
     hard_pass: true, // if saying yes to illegal business
     html: "<p> \
-      Is your business considered one of the following: \
+      Please confirm your organization is not: \
       <span class=\"badge badge-success\">NJ State Programs</span> \
     </p> \
     <ul> \
-      <li>Related to gambling or gaming activities</li> \
-      <li>Related to the purveyance of “adult” (i.e., pornographic, lewd, prurient, obscene) activities, \
-        services, products or materials (including nude or semi-nude performances or the sale of sexual aids \
-        or devices);</li> \
-      <li>An auction or bankruptcy or fire or “lost-our-lease” or “going-out-of-business” or similar sale; \
-      </li> \
-      <li>A traveling merchant</li> \
-      <li>A Christmas tree sales or other outdoor storage;</li> \
-      <li>Any other activity constituting a nuisance</li> \
-      <li>Illegal under the laws of the State of New Jersey</li> \
+      <li>Related to gambling or gaming activities.</li> \
+      <li>Related to the sale of pornographic or obscene activities, services, products or materials. (This includes nude or semi-nude performances, or sexual aids or devices.)</li> \
+      <li>An auction, bankruptcy, fire sale, “lost-our-lease” sale, “going-out-of-business”  sale, or anything similar.</li> \
+      <li>A traveling merchant.</li> \
+      <li>Selling Christmas trees or any other type of outdoor storage.</li> \
+      <li>Any other activity constituting a nuisance.</li> \
+      <li>Illegal under New Jersey law.</li> \
     </ul>"
   },
   "q15_is_prohibited_type_2": {
     // hard_pass: true, // if saying yes to illegal business
     html: "<p> \
-      Is your business considered one of the following: \
+      Please confirm your organization is not: \
       <span class=\"badge badge-success\">Federal SBA Programs</span> \
     </p> \
     <ul> \
-      <li>Related to gambling or gaming activities</li> \
-      <li>Agricultural Enterprises (i.e. the primary activity of the business, including its affiliates, is \
-        as \
-        defined in Section 18(b)(1) of the Small Business Act)</li> \
-      <li>Religious organizations</li> \
-      <li>Charitable organizations</li> \
-      <li>Businesses considered hobbies</li> \
-      <li>Government-owned concerns</li> \
-      <li>Real estate developers - establishments primarily engaged in subdividing real property into lots \
-        and \
-        developing it for resale on their own account</li> \
+      <li>Related to gambling or gaming activities.</li> \
+      <li>Involved in any farming or agricultural industry. (This includes producing food and fiber, or ranching and raising livestock or fish.)</li> \
+      <li>A religious organization.</li> \
+      <li>A charitable organization.</li> \
+      <li>A hobby.</li> \
+      <li>A government-owned concern.</li> \
+      <li>A real estate developer that divides property into lots and develops it for resale on its own account.</li> \
     </ul>"
   }
 };
