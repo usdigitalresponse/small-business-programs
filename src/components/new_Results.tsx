@@ -7,8 +7,13 @@ import EIDLProgramSection from './EconomicInjuryDisasterLoanProgramSection'
 import StatePrograms from './StatePrograms'
 import Header from "./Header";
 import Footer from "./Footer";
+import Sidebar from "./new_Sidebar";
+import Tabsbar from "./new_Tabsbar";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import "./new_results.scss";
+import "./index.scss";
 
 const allNationalPrograms = [
   {
@@ -123,27 +128,54 @@ const Results: React.FC = () => {
   const [eligibleNationalPrograms, setEligibleNationalPrograms] = useState([]);
   const [eligibleStatePrograms, setEligibleStatePrograms] = useState([]);
   const [eligibleProgramIds, setEligibleProgramIds] = useState([]);
+  const [windowWidth, setWindowWidth] = useState(0);
 
-  useEffect(() => {
+  const getEligiblePrograms = () => {
     // hacky port of raw js from previous results page, will redo with the new results page
-
     const eligibleProgramIds = new URLSearchParams(search).getAll("eligible")
-    
     setEligibleStatePrograms(allStatePrograms.filter(stateProgram => eligibleProgramIds.includes(stateProgram.id)));
     setEligibleNationalPrograms(allNationalPrograms.filter(nationalProgram => eligibleProgramIds.includes(nationalProgram.id)));
     setEligibleProgramIds(eligibleProgramIds);
-    
+  }
+
+  const updateDimensions = () => {
+    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+    setWindowWidth(windowWidth);
+  }
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+    getEligiblePrograms();
   }, []);
-  console.log(eligibleNationalPrograms)
-  console.log(eligibleStatePrograms)
+
+  const styles = {
+    showFooterMenuText: windowWidth > 500,
+    showSidebar: windowWidth > 768,
+    sidebarWidth: windowWidth < 1100 ? 50 : 150,
+    sidebarCollapsed: windowWidth < 1100
+  };
 
   return (
-    <div>
-      <Header />
-      <main className="results-page">
-        <div className="container-fluid">
+    <div className="content-page">
+    <Helmet>
+      <meta property="og:title" content="COVID-19 SMB Loan Information" />
+      <meta
+        property="og:description"
+        content="Learn about support programs available to help stabilize your business."
+      />
+      <title>COVID-19 SMB Loan Information</title>
+      <meta
+        name="Description"
+        content="Learn about support programs available to help stabilize your business."
+      />
+    </Helmet>
+    <Header/>
+    <main>
+      <div className="container">
+      {styles.showSidebar ? 
           <div className="row">
-            <div className="col-8 left">
+            <div className="col-md-8 left">
               <h1 className="title-top">
                 Your Recommendations
               </h1>
@@ -158,33 +190,34 @@ const Results: React.FC = () => {
                 eligibleStatePrograms={eligibleStatePrograms}
               />
             </div>
-            <div className="col-4 right">
-              <div className="sidebar-container">
-                <div>
-                  <div className="sidebar-title">
-                    ELIGIBLE
-                  </div>
-                  <div>
-                    {eligibleNationalPrograms.map(program => 
-                      <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
-                    )}
-                  </div>
-                  <div>
-                    {eligibleStatePrograms.map(program => 
-                      <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
-                    )}
-                  </div>
-                  {/* <div className="sidebar-title sidebar-expired">
-                    EXPIRED
-                  </div> */}
-                </div>
-              </div>
+            <div className="col-md-4 right">
+              <Sidebar
+                eligibleStatePrograms={eligibleStatePrograms}
+                eligibleNationalPrograms={eligibleNationalPrograms}
+              />
             </div>
           </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
+          :
+          <div className="row mobile-container">
+            <h1 className="title-top">
+              Your Recommendations
+            </h1>
+            <p>
+              If you and your business have an existing relationship with a bank, contact your banker for more information about available relief programs. 
+            </p>
+            <a name="ppp"></a>
+            {eligibleProgramIds.includes('ppp') && <PPPSection/>} 
+            <a name="eidl"></a>
+            {eligibleProgramIds.includes('eidl') && <EIDLProgramSection/>}
+            <StatePrograms
+              eligibleStatePrograms={eligibleStatePrograms}
+            />
+          </div>
+        }
+      </div>
+    </main>
+    <Footer />
+  </div>
   );
 };
 

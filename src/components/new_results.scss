@@ -1,12 +1,13 @@
 @import 'https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap';
 
 .results-page {
-  margin-top: 5em;
+  margin-top: 3em;
   background-color: white;
   .container-fluid {
     background-color: #fff;
     max-width: 1140px;
   }
+  margin: 15px;
 }
 
 p {
@@ -14,7 +15,7 @@ p {
 }
 
 .left {
-  padding-right: 7em;
+  padding-right: 6em;
 }
 
 .sidebar-container {
@@ -24,6 +25,7 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
+  // max-width: 284px;
 }
 
 .sidebar-title {
@@ -81,6 +83,7 @@ p {
   color: #171617;
   font-family: 'Public Sans', sans-serif;
   font-weight: 700;
+  margin-top: 0px;
 }
 
 .loan-container {
@@ -141,3 +144,26 @@ p {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.mobile-container {
+  padding: 15px;
+}
+
+// @media (max-width: 1000px) {
+//   .container-fluid {
+//     width: 90%;
+//   }
+//   input {
+//     max-width: 100%;
+//     margin: 0;
+//   }
+//   .header {
+//     padding: 20px;
+//   }
+//   .header img {
+//     margin: 0;
+//   }
+//   .header a {
+//     display: none;
+//   }
+// }

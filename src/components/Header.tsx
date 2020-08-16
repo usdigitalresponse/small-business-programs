@@ -22,8 +22,8 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
   const [language, setLanguage, languageOpts] = useSelectLanguage();
   console.log(languageOpts)
   return (
-    <nav className="navbar navbar-light navbar-expand-lg">
-      <div className="container">
+    <div className="container">
+      <nav>
         <Link className="navbar-brand" to="/">
           <img src="/usdr_logo_black.svg" alt="USDR Logo" />
         </Link>
@@ -61,8 +61,8 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
             </div>
           </>
         )}
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
