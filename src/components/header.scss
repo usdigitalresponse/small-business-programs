@@ -2,13 +2,14 @@
   max-width: 1140px;
 }
 
-nav {
-  // padding-left: 50px;
-  // padding: 0px;
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+}
 
-  // .navbar {
-  
-  // }
+nav {
   
   .navbar-brand {
     img {

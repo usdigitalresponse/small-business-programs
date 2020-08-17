@@ -36,7 +36,7 @@ const Landing: React.FC<Props> = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <section>
+              <div>
                 <h1>Find COVID-19 financial assistance for your business</h1>
 
                 <p>
@@ -55,7 +55,7 @@ const Landing: React.FC<Props> = (props) => {
                   </button>
                 </Link>
 
-              </section>
+              </div>
 
 
               <section>

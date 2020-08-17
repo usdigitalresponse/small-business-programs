@@ -38,12 +38,18 @@ p {
 }
 
 .sidebar-item {
+  border-bottom: 0.5px solid #efefef;
+  padding: 15px 0px 15px 0px;
+  width: auto;
   font-size: 18px;
   line-height: 26px;
   color: #0872b9;
   font-style: underline;
-  margin-bottom: 16px;
   text-decoration: underline;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none
 }
 
 .sidebar-expired {

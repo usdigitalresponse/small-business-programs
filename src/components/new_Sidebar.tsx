@@ -7,21 +7,13 @@ return (
   <div className="sidebar-container">
     <div>
       <div className="sidebar-title">
-        ELIGIBLE
+        INDEX
       </div>
       <div>
-        {props.eligibleNationalPrograms.map(program => 
+        {props.eligibleNationalPrograms.concat(props.eligibleStatePrograms).map(program => 
           <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
         )}
       </div>
-      <div>
-        {props.eligibleStatePrograms.map(program => 
-          <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
-        )}
-      </div>
-      {/* <div className="sidebar-title sidebar-expired">
-        EXPIRED
-      </div> */}
     </div>
   </div>
 )}

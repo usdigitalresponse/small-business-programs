@@ -190,7 +190,7 @@ const Results: React.FC = () => {
                 eligibleStatePrograms={eligibleStatePrograms}
               />
             </div>
-            <div className="col-md-4 right">
+            <div className="col-md-3">
               <Sidebar
                 eligibleStatePrograms={eligibleStatePrograms}
                 eligibleNationalPrograms={eligibleNationalPrograms}
