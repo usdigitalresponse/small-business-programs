@@ -24,13 +24,17 @@ const allNationalPrograms = [
     id: 'eidl',
     name: 'Economic Injury Disaster Loan Program', 
   },
-  {
-    id: 'sba',
-    name: 'Small Business Debt Relief Program', 
-  },
 ]
 
 const allStatePrograms = [
+  {
+    id: 'sba',
+    name: 'Small Business Debt Relief Program',
+    what: 'If your organization has an SBA loan, SBA will cover all payments for six months.',
+    who: 'Small businesses with non-disaster SBA loans.',
+    url: 'https://www.sba.gov/funding-programs/loans/coronavirus-relief-options/sba-debt-relief',
+    status: 'Available Now'
+  },
   {
     id: 'ca_small_biz',
     name: 'California Small Business Finance Center',
