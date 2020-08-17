@@ -196,8 +196,7 @@ const Results: React.FC = () => {
             </div>
             <div className="col-md-3">
               <Sidebar
-                eligibleStatePrograms={eligibleStatePrograms}
-                eligibleNationalPrograms={eligibleNationalPrograms}
+                eligiblePrograms={eligibleNationalPrograms.concat(eligibleStatePrograms)}
               />
             </div>
           </div>
@@ -209,13 +208,18 @@ const Results: React.FC = () => {
             <p>
               If you and your business have an existing relationship with a bank, contact your banker for more information about available relief programs. 
             </p>
-            <a name="ppp"></a>
-            {eligibleProgramIds.includes('ppp') && <PPPSection/>} 
-            <a name="eidl"></a>
-            {eligibleProgramIds.includes('eidl') && <EIDLProgramSection/>}
-            <StatePrograms
-              eligibleStatePrograms={eligibleStatePrograms}
+            <Tabsbar
+              eligiblePrograms={eligibleNationalPrograms.concat(eligibleStatePrograms)}
             />
+            <div data-spy="scroll" data-target="#mobile-tabsbar-container" data-offset="0">
+              <a name="ppp"></a>
+              {eligibleProgramIds.includes('ppp') && <PPPSection/>} 
+              <a name="eidl"></a>
+              {eligibleProgramIds.includes('eidl') && <EIDLProgramSection/>}
+              <StatePrograms
+                eligibleStatePrograms={eligibleStatePrograms}
+              />
+            </div>
           </div>
         }
       </div>

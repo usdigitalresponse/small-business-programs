@@ -13,7 +13,7 @@ const StatePrograms: React.FC = (props) => {
 
   const stateProgramList = props.eligibleStatePrograms.map((program, i) => {
     return (
-      <div className={i === props.eligibleStatePrograms.length - 1 ? "loan-container-last" : "loan-container"}>
+      <div id={program.id} className={i === props.eligibleStatePrograms.length - 1 ? "loan-container-last" : "loan-container"}>
         <a name={program.id}></a>
         <label className="top-label">
           {program.status}

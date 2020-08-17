@@ -24,11 +24,9 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
   return (
     <div className="container">
       <nav className="navbar">
-
         <Link className="navbar-brand" to="/">
           <img src="/usdr_logo_black.svg" alt="USDR Logo" />
         </Link>
-
         {showLanguageSelect && (
           <div>
           {languageOpts.map(lang => {
@@ -39,7 +37,6 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
           </div>
           
         )}
-
         {links.length > 0 && (
           <>
             <button
@@ -68,17 +65,3 @@ const Header: React.FC<Props> = ({ links = [], showLanguageSelect }) => {
 };
 
 export default Header;
-
-// <Box background={{ dark: false }}>
-          //   <StyledMenu
-          //     label={
-          //       languageOpts.find((lang) => lang.value === language)!.title
-          //     }
-          //     items={languageOpts.map((lang) => ({
-          //       label: lang.title,
-          //       onClick: () => {
-          //         setLanguage(lang.value);
-          //       },
-          //     }))}
-          //   />
-          // </Box>

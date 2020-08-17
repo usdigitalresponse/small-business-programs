@@ -155,6 +155,53 @@ p {
   padding: 15px;
 }
 
+#mobile-tabsbar-container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100vh;
+  background-color: white;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding-top: 15px;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.tabsbar {
+  height: 40px;
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.tab-item {
+  padding-right: 1.5em;
+  border-bottom: #f2f2f2 solid 3px;
+  padding-bottom: 15px;
+}
+
+.tab-item .current {
+  border-bottom: black solid 3px;
+  padding-bottom: 15px;
+}
+
+.tab-link {
+  color: black;
+}
+
+.tab-link .current {
+  font-weight: 700px;
+  color: red;
+}
+
+
+
 // @media (max-width: 1000px) {
 //   .container-fluid {
 //     width: 90%;

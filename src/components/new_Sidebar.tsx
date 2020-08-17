@@ -10,7 +10,7 @@ return (
         INDEX
       </div>
       <div>
-        {props.eligibleNationalPrograms.concat(props.eligibleStatePrograms).map(program => 
+        {props.eligiblePrograms.map(program => 
           <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
         )}
       </div>

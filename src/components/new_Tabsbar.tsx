@@ -1,29 +1,37 @@
 // @ts-nocheck
 import React, { useEffect , useState} from "react";
 
-const Tabsbar: React.FC = (props) => {
+import "./new_results.scss";
 
-return (
-  <div className="sidebar-container">
-    <div>
-      <div className="sidebar-title">
-        ELIGIBLE
+const Tabsbar: React.FC = (props) => {
+  const [activeTab, setActiveTab] = useState('ppp');
+
+  return (
+    <nav id="mobile-tabsbar-container">
+      <div className="tabsbar">
+        {props.eligiblePrograms.map(program => {
+          return program.id === activeTab ? 
+            (
+              <span className="tab-item current">
+                <a className="tab-link current" href={`#${program.id}`}>{program.name}</a>
+              </span>
+            ) : (
+              <span className="tab-item">
+                <a 
+                  className="tab-link" 
+                  href={`#${program.id}`}
+                  onClick={() => {
+                    setActiveTab(program.id)
+                  }}
+                >
+                    {program.name}
+                </a>
+              </span>
+            )
+        })}
       </div>
-      <div>
-        {props.eligibleNationalPrograms.map(program => 
-          <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
-        )}
-      </div>
-      <div>
-        {props.eligibleStatePrograms.map(program => 
-          <div className="sidebar-item"><a href={`#${program.id}`}>{program.name}</a></div>
-        )}
-      </div>
-      {/* <div className="sidebar-title sidebar-expired">
-        EXPIRED
-      </div> */}
-    </div>
-  </div>
-)}
+    </nav>
+  )
+}
 
 export default Tabsbar;
