@@ -21,10 +21,11 @@ const uswdsPrimary = "#005ea2";
 const theme = {
   global: {
     text: {
-      align: "left",
+      // align: "center",
     },
     font: {
       size: "14px",
+      family: "IBM Plex Sans",
     },
     selected: {
       background: "#008060",

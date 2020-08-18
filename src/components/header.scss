@@ -1,4 +1,16 @@
+.container-fluid {
+  max-width: 910px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+
 nav {
+  
   .navbar-brand {
     img {
       width: 32px;
@@ -12,10 +24,10 @@ nav {
     margin: 0 10px;
   }
 
-  &.navbar-dark,
-  &.navbar-dark a,
-  &.navbar-dark .navbar-nav .nav-link {
-    color: white;
-    font-size: 1rem;
-  }
+  // &.navbar-dark,
+  // &.navbar-dark a,
+  // &.navbar-dark .navbar-nav .nav-link {
+  //   color: white;
+  //   font-size: 1rem;
+  // }
 }

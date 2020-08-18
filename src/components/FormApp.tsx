@@ -7,6 +7,7 @@ import { useFormDictionary, useForm } from "~/contexts/form";
 
 import Header from "./Header";
 import Footer from "./Footer";
+import './index.scss';
 
 interface FormValues {
   [questionId: string]: string;
@@ -56,57 +57,64 @@ const FormApp: React.FC<Props> = (props) => {
   return (
     <>
       <Header showLanguageSelect />
-      <Box
-        align="start"
-        direction="column"
-        background="white"
-        pad={{ vertical: "medium", horizontal: "xlarge" }}
-      >
-        {currentIndex > 0 && (
-          <Button
-            buttonType="unstyled"
-            onClick={onClickBack}
-            style={{ color: "black" }}
-          >
-            &#9666; {back}
-          </Button>
-        )}
-
-        <Box margin={{ top: "medium" }} width="100%">
+      <div className="content-page">
+        <div className="container">
+          {currentIndex > 0 && (
+            <Button
+              buttonType="unstyled"
+              onClick={onClickBack}
+              style={{ color: "black" }}
+            >
+              &#9666; {back}
+            </Button>
+          )}
           <Box
-            margin={{ top: "xsmall" }}
-            style={{
-              width: "100%",
-              height: "8px",
-              borderRadius: "12px",
-              background: "#E4E7EB",
-            }}
+            align="start"
+            direction="column"
+            background="white"
+            pad={{ vertical: "small", horizontal: "large", bottom: "large"}}
+            elevation="medium"
+            responsive
+            width={{max: 'large'}}
+            margin={{ top: "medium" , bottom: "medium"}}
           >
-            <Box
-              style={{
-                width: `${percent}%`,
-                height: "100%",
-                borderRadius: "12px",
-                background: "#008060",
-              }}
-            />
-          </Box>
-          <Box>
-            <Text color="black" weight={300} size="xsmall">
-              {percent}% {complete}
-            </Text>
-          </Box>
-        </Box>
-        <Form question={filteredQuestions[currentIndex]} />
+            <Box margin={{ top: "medium" }} width="100%">
+              <Box
+                margin={{ top: "xsmall" }}
+                style={{
+                  width: "100%",
+                  height: "8px",
+                  borderRadius: "12px",
+                  background: "#E4E7EB",
+                }}
+              >
+                <Box
+                  style={{
+                    width: `${percent}%`,
+                    height: "100%",
+                    borderRadius: "12px",
+                    background: "#008060",
+                  }}
+                />
+              </Box>
+              <Box>
+                <Text color="black" weight={300} size="xsmall">
+                  {percent}% {complete}
+                </Text>
+              </Box>
+            </Box>
+            <Form question={filteredQuestions[currentIndex]} />
 
-        {currentIndex + 1 < filteredQuestions.length ? (
-          <Button onClick={onClickNext} size="large">
-            {next}
-          </Button>
-        ) : (
-          <ResultsButton />
-        )}
-      </Box>
+            {currentIndex + 1 < filteredQuestions.length ? (
+              <Button onClick={onClickNext} size="large">
+                {next}
+              </Button>
+            ) : (
+              <ResultsButton />
+            )}
+          </Box>
+        </div>
+      </div>
       <Footer />
     </>
   );

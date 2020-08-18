@@ -9,7 +9,7 @@ import "./new_results.scss";
 const EIDLProgramSection: React.FC = () => {
 
   return (
-    <div className="loan-container">
+    <div className="loan-container" id="eidl">
       <label className="top-label">
         Apply by Dec 31, 2020
       </label>

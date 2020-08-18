@@ -37,7 +37,7 @@ const pppLenders = [
 const PPPSection: React.FC = () => {
 
   return (
-    <div className="loan-container">
+    <div className="loan-container" id="ppp">
       <label className="top-label">
         Extended to August 8, 2020
       </label>
