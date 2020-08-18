@@ -14,11 +14,12 @@ body {
 
   p,
   li {
-    font-size: 1rem;
+    // font-size: 1rem;
   }
 
   section {
     margin-top: 3rem;
+    font-size: 18px;
   }
 
   h1 {
@@ -42,6 +43,10 @@ body {
   main .container {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .mobile-top-image {
+    padding-bottom: 30px;
   }
 
   a.btn {
@@ -137,4 +142,12 @@ body {
   .ppp-table-who {
     width: 35%;
   }
+}
+
+.humans-image {
+  padding: 0px 50px 0px 50px;
+}
+
+#mobile {
+  padding-top: 30px;
 }

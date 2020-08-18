@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -17,6 +17,24 @@ interface Props {
 const Landing: React.FC<Props> = (props) => {
   const { ca, pitt, hawaii } = props;
 
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  const updateDimensions = () => {
+    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+    setWindowWidth(windowWidth);
+  }
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+  })
+
+  const styles = {
+    showSidebar: windowWidth > 768,
+    sidebarWidth: windowWidth < 1100 ? 50 : 150,
+    sidebarCollapsed: windowWidth < 1100
+  };
+
   return (
     <div className="content-page">
       <Helmet>
@@ -32,34 +50,36 @@ const Landing: React.FC<Props> = (props) => {
         />
       </Helmet>
       <Header/>
+      {!styles.showSidebar ? 
+          <div className="container humans-image">
+            <img
+              src="/smb_humans.svg"
+              alt="Person getting money"
+            ></img>
+          </div>
+            :
+          <></>
+        }
       <main>
-        <div className="container">
+        <div className="container" id={styles.showSidebar ? "" : "mobile"}>
           <div className="row">
             <div className="col-md-6">
               <div>
                 <h1>Find COVID-19 financial assistance for your business</h1>
-
                 <p>
-
-                  Answer a few questions to find loans and funding alternatives.
+                  Answer a few questions to find loans, funding alternatives, and support.
                 </p>
-                <p>
+                {/* <p>
                   UPDATE: The federal Payroll Protection Program has been extended to August 8, 2020. Find a lender and complete your application before the deadline.
-
-                </p>
-
-
+                </p> */}
                 <Link to={ca ? "/california/questions" : pitt ? "/pittsburgh/questions" : hawaii ? "/hawaii/questions" : "/questions"}>
                   <button className="usa-button usa-button--big">
                     Get Started
                   </button>
                 </Link>
-
               </div>
-
-
               <section>
-                <h2>Who is it for?</h2>
+                {/* <h2>Who is it for?</h2> */}
                 <p>This free tool is for U.S.-based businesses including:</p>
                 <ul>
                   <li>Nonprofits</li>
@@ -70,12 +90,9 @@ const Landing: React.FC<Props> = (props) => {
                 </ul>
                 <p>If you have more than 500 employees, check the <a href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
                   Small Business Administration size standards </a> to find loans specific to your industry.</p>
-
-
               </section>
-              <section id="government-partners">
+              {/* <section id="government-partners">
                 <h2>Government partners</h2>
-
                 <p>
                   To get a free tool built for your agency or to include your state's programs, please email the {" "}
                   <a
@@ -86,11 +103,11 @@ const Landing: React.FC<Props> = (props) => {
                   </a>
                   .
                 </p>
-              </section>
+              </section> */}
             </div>
             <div className="col-md-6 d-none d-md-block">
               <img
-                src="/landing_header_img.png"
+                src="/smb_humans.svg"
                 alt="Person getting money"
               ></img>
             </div>

@@ -22,8 +22,17 @@ const Question: React.FC<Props> = (props) => {
 
   return (
     <Box direction="column" margin={{ bottom: 'small' }}>
-      <Box fill={true} margin={{ bottom: 'small' }} style={{height: "auto"}}>
-        <Text size="medium" color="black" margin={{ top: 'large' }}>
+      <Box 
+        fill={true} 
+        margin={{ bottom: 'small' }} 
+        style={{height: "auto"}}
+      >
+        <Text 
+          size="large" 
+          color="black" 
+          margin={{ top: 'large', bottom: 'medium'}}
+          weight="bold"
+        >
           {<span className="foo" dangerouslySetInnerHTML={{__html: text}} />}
         </Text>
       </Box>

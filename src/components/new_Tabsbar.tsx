@@ -13,7 +13,7 @@ const Tabsbar: React.FC = (props) => {
           return program.id === activeTab ? 
             (
               <span className="tab-item current">
-                <a className="tab-link current" href={`#${program.id}`}>{program.name}</a>
+                <a className="tab-link current" href={`#${program.id}`}><strong>{program.name}</strong></a>
               </span>
             ) : (
               <span className="tab-item">

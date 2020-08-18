@@ -194,7 +194,7 @@ const Results: React.FC = () => {
                 eligibleStatePrograms={eligibleStatePrograms}
               />
             </div>
-            <div className="col-md-3">
+            <div className="col-md-4">
               <Sidebar
                 eligiblePrograms={eligibleNationalPrograms.concat(eligibleStatePrograms)}
               />
