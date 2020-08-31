@@ -17,7 +17,7 @@ interface Props {
 const Landing: React.FC<Props> = (props) => {
   const { ca, pitt, hawaii } = props;
 
-  const [windowWidth, setWindowWidth] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(1000);
 
   const updateDimensions = () => {
     let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
@@ -82,7 +82,7 @@ const Landing: React.FC<Props> = (props) => {
                 {/* <h2>Who is it for?</h2> */}
                 <p>This free tool is for U.S.-based businesses including:</p>
                 <ul>
-                  <li>Nonprofits</li>
+                  <li>Non-profits</li>
                   <li>Tribal business concerns</li>
                   <li>Self-employed individuals</li>
                   <li>Contractors, freelancers, and gig workers</li>
