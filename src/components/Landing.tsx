@@ -50,16 +50,12 @@ const Landing: React.FC<Props> = (props) => {
         />
       </Helmet>
       <Header/>
-      {!styles.showSidebar ? 
-          <div className="container humans-image">
-            <img
-              src="/smb_humans.svg"
-              alt="Person getting money"
-            ></img>
-          </div>
-            :
-          <></>
-        }
+      <div className="container humans-image">
+        <img
+          src="/smb_humans.svg"
+          alt="Person getting money"
+        ></img>
+      </div>
       <main>
         <div className="container">
           <div className="row">
