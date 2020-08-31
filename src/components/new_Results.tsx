@@ -28,7 +28,7 @@ const allNationalPrograms = [
 
 const allStatePrograms = [
   {
-    id: 'sba',
+    id: 'sba_debt',
     name: 'Small Business Debt Relief Program',
     what: 'If your organization has an SBA loan, SBA will cover all payments for six months.',
     who: 'Small businesses with non-disaster SBA loans.',
