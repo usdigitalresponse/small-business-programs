@@ -3,6 +3,10 @@ body {
   font-family: Public Sans, Helvetica, sans-serif;
 }
 .content-page {
+  // min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   /* resets */
   h1,
   h2,
@@ -146,8 +150,4 @@ body {
 
 .humans-image {
   padding: 0px 50px 0px 50px;
-}
-
-#mobile {
-  padding-top: 30px;
 }

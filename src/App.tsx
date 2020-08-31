@@ -10,7 +10,7 @@ import Landing from "./components/Landing";
 import OldQuestionnaire from "./components/OldQuestionnaire";
 import PPPLoanInfo from "./components/PPPLoanInfo";
 import Results from "./components/new_Results";
-import OldResults from "./components/OldResults";
+// import OldResults from "./components/OldResults";
 
 import "./App.scss";
 
@@ -138,7 +138,6 @@ function App() {
               <PPPLoanInfo />
             </Route>
             <Route exact path="/results">
-              {/* <OldResults/> */}
               <Results />
             </Route>
             <Route exact path="/">

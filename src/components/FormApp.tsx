@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Box, Text } from "grommet";
 import Form from "./Form";
 import ResultsButton from "./ResultsButton";
@@ -7,6 +7,8 @@ import { useFormDictionary, useForm } from "~/contexts/form";
 
 import Header from "./Header";
 import Footer from "./Footer";
+
+import './formApp.scss'
 import './index.scss';
 
 interface FormValues {
@@ -23,9 +25,28 @@ const FormApp: React.FC<Props> = (props) => {
   const { ca, pitt, hawaii } = props;
   const [back, next, complete] = useFormDictionary("back", "next", "complete");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  const updateDimensions = () => {
+    let windowWidth = typeof window !== "undefined" ? window.innerWidth : 0;
+    setWindowWidth(windowWidth);
+  }
+
+  useEffect(() => {
+    updateDimensions();
+    window.addEventListener("resize", updateDimensions);
+  }, [])
+
+  const styles = {
+    showElevation: windowWidth > 768,
+    fullWidth: windowWidth > 768,
+  };
+
   const {
     form: { questions },
   } = useForm();
+  
 
   let filteredQuestions = questions;
   if (!ca && !pitt && !hawaii) {
@@ -55,65 +76,71 @@ const FormApp: React.FC<Props> = (props) => {
   const onClickBack = () => setNextPage(currentIndex - 1);
 
   return (
-    <>
-      <Header showLanguageSelect />
+    <>  
       <div className="content-page">
-        <div className="container">
-          {currentIndex > 0 && (
-            <Button
-              buttonType="unstyled"
-              onClick={onClickBack}
-              style={{ color: "black" }}
-            >
-              &#9666; {back}
-            </Button>
-          )}
-          <Box
-            align="start"
-            direction="column"
-            background="white"
-            pad={{ vertical: "small", horizontal: "large", bottom: "large"}}
-            elevation="medium"
-            responsive
-            width={{max: 'large'}}
-            margin={{ top: "medium" , bottom: "medium"}}
-          >
-            <Box margin={{ top: "medium" }} width="100%">
-              <Box
-                margin={{ top: "xsmall" }}
-                style={{
-                  width: "100%",
-                  height: "8px",
-                  borderRadius: "12px",
-                  background: "#E4E7EB",
-                }}
-              >
-                <Box
-                  style={{
-                    width: `${percent}%`,
-                    height: "100%",
-                    borderRadius: "12px",
-                    background: "#008060",
-                  }}
-                />
-              </Box>
-              <Box>
-                <Text color="black" weight={300} size="xsmall">
-                  {percent}% {complete}
-                </Text>
-              </Box>
-            </Box>
-            <Form question={filteredQuestions[currentIndex]} />
-
-            {currentIndex + 1 < filteredQuestions.length ? (
-              <Button onClick={onClickNext} size="large">
-                {next}
-              </Button>
-            ) : (
-              <ResultsButton />
+        <Header showLanguageSelect />
+        <main>
+          <div className="container">
+            {currentIndex > 0 && (
+              <div className="back-button-container">
+                <Button
+                  buttonType="unstyled"
+                  onClick={onClickBack}
+                  style={{ color: "black" }}
+                >
+                  &#9666; {back}
+                </Button>
+              </div>
             )}
-          </Box>
-        </div>
+            <div className="question-container">
+              <Box
+                align="start"
+                direction="column"
+                background="white"
+                pad={{ vertical: "small", horizontal: "large", bottom: "large"}}
+                elevation={styles.showElevation ? "medium" : ""}  
+                responsive
+                width={styles.fullWidth ? '500px' : {min: '200px'}}
+                margin={{ top: "medium" , bottom: "medium"}}
+              >
+                {/* <Box margin={{ top: "medium" }} width="100%">
+                  <Box
+                    margin={{ top: "xsmall" }}
+                    style={{
+                      width: "100%",
+                      height: "8px",
+                      borderRadius: "12px",
+                      background: "#E4E7EB",
+                    }}
+                  >
+                    <Box
+                      style={{
+                        width: `${percent}%`,
+                        height: "100%",
+                        borderRadius: "12px",
+                        background: "#008060",
+                      }}
+                    />
+                  </Box>
+                  <Box>
+                    <Text color="black" weight={300} size="xsmall">
+                      {percent}% {complete}
+                    </Text>
+                  </Box>
+                </Box> */}
+                <Form question={filteredQuestions[currentIndex]} />
+
+                {currentIndex + 1 < filteredQuestions.length ? (
+                  <Button onClick={onClickNext} size="large">
+                    {next}
+                  </Button>
+                ) : (
+                  <ResultsButton />
+                )}
+              </Box>
+            </div>
+          </div>
+        </main>
       </div>
       <Footer />
     </>

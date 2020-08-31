@@ -27,7 +27,7 @@ const Landing: React.FC<Props> = (props) => {
   useEffect(() => {
     updateDimensions();
     window.addEventListener("resize", updateDimensions);
-  })
+  }, [])
 
   const styles = {
     showSidebar: windowWidth > 768,
@@ -61,7 +61,7 @@ const Landing: React.FC<Props> = (props) => {
           <></>
         }
       <main>
-        <div className="container" id={styles.showSidebar ? "" : "mobile"}>
+        <div className="container">
           <div className="row">
             <div className="col-md-6">
               <div>
