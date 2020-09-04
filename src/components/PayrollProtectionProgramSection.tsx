@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 
-import Header from "./Header";
-import Footer from "./Footer";
-
 import "./new_results.scss";
 
 const pppLenders = [

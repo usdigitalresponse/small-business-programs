@@ -138,7 +138,9 @@ function App() {
               <PPPLoanInfo />
             </Route>
             <Route exact path="/results">
-              <Results />
+              <FormProvider>
+                <Results />
+              </FormProvider>
             </Route>
             <Route exact path="/">
               <Landing></Landing>

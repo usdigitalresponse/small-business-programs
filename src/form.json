@@ -56,6 +56,11 @@
       "en": "Results",
       "es": "Resultados",
       "zh": "结果"
+    },
+    "apply-now": {
+      "en": "Apply Now",
+      "es": "Solicite ya",
+      "zh": "立即申請"
     }
   },
 
@@ -311,5 +316,316 @@
       "required": true,
       "hawaii_only": true
     }
+  ],
+  "results": [
+    {
+      "id": "page-title",
+      "recommendations": {
+        "en": "Your Recommendations",
+        "es": "Resultados",
+        "zh": "結果"
+      }
+    },
+    {
+      "id": "instructions",
+      "relationship": {
+        "en": "If you and your business have an existing relationship with a bank, contact your banker for more information about available relief programs.",
+        "es": "Si usted tiene una cuenta comercial, primero comuníquese con su banco para conocer las opciones de préstamos.",
+        "zh": "如果您有企業帳戶，請先與您的銀行聯繫貸款的選項。"
+      }
+    },
+    {
+      "id":"ppp",
+      "name": {
+        "en": "PPP",
+        "es": "",
+        "zh": ""
+      },
+      "what": {
+        "en": "If your organization has an SBA loan, SBA will cover all payments for six months.",
+        "es": "",
+        "zh": ""
+      },
+      "who": {
+        "en": "Small businesses with non-disaster SBA loans.",
+        "es": "",
+        "zh": ""
+      },
+      "url":"https://www.sba.gov/funding-programs/loans/coronavirus-relief-options/sba-debt-relief",
+      "status": {
+        "en": "Available Now",
+        "es": "",
+        "zh": ""
+      }
+    },
+    {
+      "id":"eidl",
+      "name": {
+        "en": "EIDL",
+        "es": "",
+        "zh": ""
+      },
+      "what": {
+        "en": "If your organization has an SBA loan, SBA will cover all payments for six months.",
+        "es": "",
+        "zh": ""
+      },
+      "who": {
+        "en": "Small businesses with non-disaster SBA loans.",
+        "es": "",
+        "zh": ""
+      },
+      "url":"https://www.sba.gov/funding-programs/loans/coronavirus-relief-options/sba-debt-relief",
+      "status": {
+        "en": "Available Now",
+        "es": "",
+        "zh": ""
+      }
+    },
+    {
+      "id":"sba_debt",
+      "name": {
+        "en": "Small Business Debt Relief Program",
+        "es": "",
+        "zh": ""
+      },
+      "what": {
+        "en": "If your organization has an SBA loan, SBA will cover all payments for six months.",
+        "es": "",
+        "zh": ""
+      },
+      "who": {
+        "en": "Small businesses with non-disaster SBA loans.",
+        "es": "",
+        "zh": ""
+      },
+      "url":"https://www.sba.gov/funding-programs/loans/coronavirus-relief-options/sba-debt-relief",
+      "status": {
+        "en": "Available Now",
+        "es": "",
+        "zh": ""
+      }
+    },
+    {
+        "id":"ca_small_biz",
+        "name":{
+          "en":"California Small Business Finance Center",
+          "es":"Centro de Finanzas de Pequeñas Empresas de California",
+          "zh":"加州小型企業金融中心"
+        },
+        "what":{
+          "en":"Loan guarantees for small businesses",
+          "es":"Garantías de préstamos para pequeñas empresas",
+          "zh":"小型企業的貸款擔保"
+        },
+        "who":{
+          "en":"California small businesses. Loan proceeds can be used for business continuance or to cure \"economic injury\" as a result of the COVID-19 pandemic.",
+          "es":"Pequeñas empresas de California. Los ingresos del préstamo pueden utilizarse para la continuación del negocio o para mitigar los daños económicos surgidos como resultado de la pandemia de COVID-19.",
+          "zh":"加州小型企業。貸款收益可用於業務持續發展或緩解COVID-19疫情導致的「經濟損害」。"
+        },
+        "url":"https://ibank.ca.gov/small-business-finance-center/",
+        "status":"Available Now"
+    },
+    {
+        "id":"pitt_elf",
+        "name":{
+          "en":"Pittsburgh Small Business Emergency Loan Fund",
+          "es":"Fondo de préstamos de emergencia para pequeñas empresas de Pittsburgh",
+          "zh":"匹茲堡小型企業緊急貸款基金"
+        },
+        "what":{
+          "en":"Loans up to $15,000 with 0% interest offered by the Urban Redevelopment Authority.",
+          "es":"Préstamos de hasta $15,000 dólares con 0% de interés ofrecido por la Autoridad de Reurbanización.",
+          "zh":"城市再開發局提供最高貸款 $15,000，0%利息。"
+        },
+        "who":{
+          "en":"Small businesses located in Pittsburgh with fewer than 30 full-time employees.",
+          "es":"Pequeñas empresas ubicadas en Pittsburgh con menos de 30 empleados a tiempo completo.",
+          "zh":"匹茲堡的小型企業，全職員工少於30名。"
+        },
+        "url":"https://www.ura.org/pages/covid-19-small-business-fund",
+        "status":"Available Now"
+    },
+    {
+        "id":"pitt_ura",
+        "name":{
+          "en":"Urban Redevelopment Authority of Pittsburgh Recovery Loan",
+          "es":"Préstamo de Recuperación de la Autoridad de Reurbanización de Pittsburgh",
+          "zh":"城市再開發局的匹茲堡復甦貸款"
+        },
+        "what":{
+          "en":"Loans up to $75,000 with 0% interest for the first year and 2% for the balance of loan term.",
+          "es":"Préstamos de hasta $75,000 dólares con 0% de interés durante el primer año y 2% durante el resto del plazo del préstamo.",
+          "zh":"最高貸款 $75,000，第一年0%利息，剩餘貸款期限為2%利息。"
+        },
+        "who":{
+          "en":"Small businesses located in Pittsburgh with fewer than 30 full-time employees.",
+          "es":"Pequeñas empresas ubicadas en Pittsburgh con menos de 30 empleados a tiempo completo.",
+          "zh":"匹茲堡的小型企業，全職員工少於30名。"
+        },
+        "url":"https://www.ura.org/pages/covid-19-small-business-fund",
+        "status":"Available Now"
+    },
+    {
+        "id":"pitt_bridgeway",
+        "name":{
+          "en":"Bridgeway Capital Response Fund",
+          "es":"",
+          "zh":""
+        },
+        "what":{
+          "en":"Connecting small businesses in western Pennsylvania to capital when it is needed most.",
+          "es":"",
+          "zh":""
+        },
+        "who":{
+          "en":"Small businesses in western Pennsylvania.",
+          "es":"",
+          "zh":""
+        },
+        "url":"https://www.bridgewaycapital.org/loans-and-modifications/covid-19-response-fund/",
+        "status":"Available Now"
+    },
+    {
+        "id":"pitt_kiva",
+        "name":{
+          "en":"Kiva Pittsburgh Loans",
+          "es":"Préstamos de Kiva Pittsburgh",
+          "zh":"Kiva 匹茲堡貸款"
+        },
+        "what":{
+          "en":"Kiva helps financially excluded and socially impactful entrepreneurs access capital via crowdfunding.",
+          "es":"Kiva ayuda a los empresarios financieramente excluidos y socialmente impactantes a acceder al capital mediante ‘crowdfunding’.",
+          "zh":"Kiva 透過眾籌資金來幫助在財務上受到排斥並具有社會影響力的創業家獲取資金。"
+        },
+        "who":{
+          "en":"Small businesses located in the surrounding areas around Pittsburgh.",
+          "es":"Pequeñas empresas ubicadas en los alrededores de Pittsburgh.",
+          "zh":"匹茲堡周邊地區的小型企業。"
+        },
+        "url":"https://www.riversidecenterforinnovation.com/kiva/home",
+        "status":"Available Now"
+    },
+    {
+        "id":"pitt_honeycomb",
+        "name":{
+          "en":"Honeycomb Small Business Relief Loan",
+          "es":"Préstamo de alivio para pequeñas empresas Honeycomb",
+          "zh":"Honeycomb 小型企業救濟貸款"
+        },
+        "what":{
+          "en":"Honeycomb Crowdfunded Small Business Relief Loan.",
+          "es":"",
+          "zh":""
+        },
+        "who":{
+          "en":"Small businesses located in the surrounding areas around Pittsburgh.",
+          "es":"Pequeñas empresas ubicadas en los alrededores de Pittsburgh.",
+          "zh":"匹茲堡周邊地區的小型企業。"
+        },
+        "url":"https://www.honeycombcredit.com/relief",
+        "status":"Available Now"
+    },
+    {
+        "id":"hawaii_community",
+        "name":{
+          "en":"Hawaii Community-Based Economic Development Loan",
+          "es":"",
+          "zh":""
+        },
+        "what":{
+          "en":"CBED offers micro-loans usually up to $50,000 to eligible small businesses that support economic development in their communities.",
+          "es":"",
+          "zh":""
+        },
+        "who":{
+          "en":"",
+          "es":"",
+          "zh":""
+        },
+        "url":"https://invest.hawaii.gov/business/cbed/",
+        "status":"Available Now"
+    },
+    {
+        "id":"hawaii_small_business",
+        "name":{
+          "en":"Hawaii Small Business Relief & Recovery Fund",
+          "es":"Fondo de Ayuda y Recuperación para Pequeñas Empresas de Hawái",
+          "zh":"夏威夷小型企業救濟與復甦基金"
+        },
+        "what":{
+          "en":"Small Business Relief & Recovery Fund offers a one-time reimbursement for expenses of up to $10,000.",
+          "es":"El Fondo de Ayuda y Recuperación para Pequeñas Empresas ofrece un reembolso único por gastos de hasta $10,000 dólares.",
+          "zh":"小型企業救濟與復甦基金提供一次性最高 $10,000 的費用報銷。"
+        },
+        "who":{
+          "en":"Small businesses who have incurred costs from business interruption due to. Emergency Proclamations or costs to implement safety precautions to prevent the spread of COVID-19. Businesses must have less than 1 million in gross annual revenue and 30 or fewer employees. Businesses must also be located in the City and County of Honolulu.",
+          "es":"Pequeñas empresas que han incurrido en costos por la interrupción del negocio debido a proclamaciones de emergencia o costos para implementar precauciones de seguridad para prevenir la propagación del COVID-19.",
+          "zh":"因此原因導致業務中斷而產生了成本的小型企業: 實施安全預防措施以防範 COVID-19 擴散的緊急聲明或開銷。"
+        },
+        "url":"https://www.oneoahu.org/small-business",
+        "status":"Available Now"
+    },
+    {
+        "id":"hawaii_manufacturing",
+        "name":{
+          "en":"Hawaii Manufacturing Assistance Program",
+          "es":"Programa de asistencia de fabricación de Hawai",
+          "zh":"夏威夷製造業援助計劃"
+        },
+        "what":{
+          "en":"HTDC’s Manufacturing Assistance Program Grant (MAP) offers Hawaii-based manufacturers up to a 20% reimbursement (up to $100,000) on qualified expenses to help Hawaii manufacturers become globally competitive.  Qualifying expenses include: equipment purchases, training, energy efficiency projects, and manufacturing feasibility studies.",
+          "es":"La subvención del programa de asistencia de fabricación (MAP por sus siglas en inglés) de HTDC ofrece a los fabricantes con sede en Hawai hasta un 20% de reembolso (hasta $100,000 dólares) para cubrir gastos calificados para así ayudar a los fabricantes de Hawaii a volverse globalmente competitivos. Los gastos que califican incluyen: compras de equipo, capacitación, proyectos de eficiencia energética y estudios de factibilidad de fabricación.",
+          "zh":"HTDC的製造業援助計劃補助金（MAP）為夏威夷的製造商提供高達20%的合格費用報銷（最高100,000美元）來幫助夏威夷製造商變得具有全球競爭力。合格費用包括：設備購買、培訓、能源效率計畫和製造可行性研究。"
+        },
+        "who":{
+          "en":"Must conduct manufacturing activities in Hawaii and be categorized as NAICS 31, 32, 33.",
+          "es":"Debe realizar actividades de fabricación en Hawai y clasificarse como NAICS 31, 32, 33.",
+          "zh":"必須在夏威夷進行製造活動，並歸為NAICS 31、32、33。"
+        },
+        "url":"https://www.htdc.org/money/#map",
+        "status":"Available Now"
+    },
+    {
+        "id":"hawaii_malama",
+        "name":{
+          "en":"Hawaii Malama Business Loan Program",
+          "es":"Programa de préstamos comerciales de Hawaii Malama",
+          "zh":"夏威夷 Malama 商業貸款計劃"
+        },
+        "what":{
+          "en":"This is the most popular loan the Office of Hawaiian Affairs offers that support Native Hawaiian Business owners with loans between $2,500 to $100,000.",
+          "es":"Este es el préstamo más popular que la Oficina de Asuntos de Hawai ofrece para el apoyo de propietarios de empresas con ascendencia nativa hawaiana, ofreciéndoles préstamos de entre $2,500 y $100,000 dólares.",
+          "zh":"這是夏威夷事務辦公室提供的最受歡迎的貸款。支持夏威夷族原住民企業主，貸款額在 $2,500到 $100,000之間。"
+        },
+        "who":{
+          "en":"Must be of Native Hawaiian ancestry with a credit score of 600 or higher with an income to debt ratio of no more than 45%.",
+          "es":"Debe ser de ascendencia nativa hawaiana con un puntaje de crédito de 600 o más, y debe poseer una proporción de ingreso / deuda de no más del 45%.",
+          "zh":"必須是夏威夷族原住民，信用評分為600或更高，收入與債務比率不超過45%。"
+        },
+        "url":"https://loans.oha.org/business/malama-business/",
+        "status":"Available Now"
+    },
+    {
+        "id":"hawaii_hua",
+        "name":{
+          "en":"Hawaii Hua Kanu Business Loan Program",
+          "es":"Programa de préstamos comerciales de Hawaii Hua Kanu",
+          "zh":"夏威夷 Hua Kanu 商業貸款計劃"
+        },
+        "what":{
+          "en":"The Hua Kanu Business Loan Program is available to Native Hawaiians who own established business. Created on July 17, 2013, the low-cost loans are intended to help these small-businesses expand. It is meant to provide them access to credit and capital that will allow them to grow as well as remain financially viable. Loans between $200,000 to $1,000,000.",
+          "es":"El Programa de préstamos comerciales de Hua Kanu está disponible para los hawaianos nativos que posean negocios establecidos. Creado el 17 de julio de 2013, los préstamos de bajo costo están destinados a ayudar a estas pequeñas empresas a expandirse. Su objetivo es proporcionarles acceso a crédito y capital que les permita crecer y seguir siendo financieramente viables.",
+          "zh":"Hua Kanu 商業貸款計劃適用於擁有已建立企業的夏威夷族原住民。 此低成本貸款成立於2013年7月17日，旨在幫助這些小型企業擴展業務。 此低貸款的目的為提供獲得信貸和資本的途徑，讓小型企業能成長並保持財務上的生存能力。"
+        },
+        "who":{
+          "en":"Principals must be Native Hawaiian and verified by current Office of Hawaiian Affairs Registry Card.",
+          "es":"Los directores deben ser nativos de Hawai y deben estar verificados por la tarjeta de registro actual de la Oficina de Asuntos de Hawai.",
+          "zh":"企業主必須是夏威夷族原住民，並且必須以夏威夷事務處發放的有效登記證核實。"
+        },
+        "url":"https://loans.oha.org/business/hua-kanu-business-loan/",
+        "status":"Available Now"
+    }
+   
   ]
 }
