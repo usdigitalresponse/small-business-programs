@@ -9,7 +9,7 @@ import { FormProvider } from "~/contexts/form";
 import Landing from "./components/Landing";
 import OldQuestionnaire from "./components/OldQuestionnaire";
 import PPPLoanInfo from "./components/PPPLoanInfo";
-import Results from "./components/new_Results";
+import Results from "./components/Results";
 // import OldResults from "./components/OldResults";
 
 import "./App.scss";

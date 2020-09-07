@@ -3,10 +3,10 @@ body {
   font-family: Public Sans, Helvetica, sans-serif;
 }
 .content-page {
-  // min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
   /* resets */
   h1,
   h2,
@@ -14,11 +14,6 @@ body {
   h4,
   h5 {
     margin-top: 0px;
-  }
-
-  p,
-  li {
-    // font-size: 1rem;
   }
 
   section {
@@ -60,6 +55,8 @@ body {
     font-size: 1.2rem;
     line-height: 1.8;
   }
+
+  
 
   /* Hero styles */
   .hero ul {
@@ -148,6 +145,10 @@ body {
   }
 }
 
+.link-in-text{
+  text-decoration: underline;
+}
+
 // Landing Page
 
 .humans-image {
@@ -159,6 +160,5 @@ body {
     display: none;
   }
 }
-
 
 

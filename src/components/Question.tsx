@@ -20,8 +20,6 @@ const Question: React.FC<Props> = (props) => {
   // simple formatting for the question text
   const text = question.name.replace(/\n/g, "\n<br/>")
 
-  console.log('text ques', text)
-
   return (
     <Box direction="column" margin={{ bottom: 'small' }}>
       <Box 

@@ -4,7 +4,7 @@ import React, { useEffect , useState} from "react";
 const Sidebar: React.FC = (props) => {
 
 return (
-  <div className="sidebar-container">
+  <nav className="sidebar-container">
     <div>
       <div className="sidebar-title">
         INDEX
@@ -15,7 +15,7 @@ return (
         )}
       </div>
     </div>
-  </div>
+  </nav>
 )}
 
 export default Sidebar;
