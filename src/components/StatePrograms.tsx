@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 
 import "./form-style.scss";
-import "./new_results.scss";
+import "./results.scss";
 
 const StatePrograms: React.FC = (props) => {
 

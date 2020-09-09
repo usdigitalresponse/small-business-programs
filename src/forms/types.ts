@@ -59,6 +59,7 @@ export interface Page {
 
 interface Question {
   name: Copy;
+  name2: Copy;
   instructions?: Copy;
   required?: boolean;
   type: QuestionType;

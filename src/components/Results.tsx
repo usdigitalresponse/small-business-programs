@@ -7,12 +7,12 @@ import EIDLProgramSection from './EconomicInjuryDisasterLoanProgramSection'
 import StatePrograms from './StatePrograms'
 import Header from "./Header";
 import Footer from "./Footer";
-import Sidebar from "./new_Sidebar";
-import Tabsbar from "./new_Tabsbar";
+import Sidebar from "./Sidebar";
+import Tabsbar from "./Tabsbar";
 import { Helmet } from "react-helmet";
 import { useFormDictionary, useForm } from "~/contexts/form";
 
-import "./new_results.scss";
+import "./results.scss";
 import "./index.scss";
 
 const allNationalPrograms = [
@@ -22,7 +22,6 @@ const allNationalPrograms = [
 ];
 
 const allStatePrograms = [
-  'sba_debt',
   'ca_small_biz',
   'pitt_elf',
   'pitt_ura',

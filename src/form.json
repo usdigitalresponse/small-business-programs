@@ -9,7 +9,7 @@
     },
     "next": {
       "en": "Next",
-      "es": "próximo",
+      "es": "Próximo",
       "zh": "下一个"
     },
     "yes": {
@@ -166,9 +166,14 @@
     {
       "id": "is_illegal",
       "name": {
-        "en": "Are you, your chief executive officer or the equivalent able to certify that (This question is to determine eligibility for Federal Small Business Administration EIDL) \n- The organization is not engaged in any illegal activity (as defined by Federal guidelines). \n- No principal of the organization with a 50 percent or greater ownership interest is more than sixty (60) days delinquent on child support obligations.\n- Applicant is not an agricultural enterprise (e.g., farm), other than an aquaculture enterprise, agricultural cooperative, or nursery. \n- The organization does not present live performances of a prurient sexual nature or derive directly or indirectly more than de minimis gross revenue through the sale of products or services, or the presentation of any depictions or displays, of a prurient sexual nature. \n- The organization is not in the business of lobbying \n- The organization cannot be a state, local, or municipal government entity and cannot be a member of Congress.",
-        "es": "¿Es usted, su director ejecutivo o el equivalente capaz de certificar eso? (Esta pregunta es para determinar la elegibilidad para la Administración Federal de Pequeños Negocios EIDL)\n- La organización no participa en ninguna actividad ilegal (como se define en las pautas federales).\n- Ningún director de la organización con un interés de propiedad del 50 por ciento o más tiene más de sesenta (60) días de atraso en las obligaciones de manutención infantil.\n- El solicitante no es una empresa agrícola (por ejemplo, una granja), que no sea una empresa acuícola, una cooperativa agrícola o un vivero.\n- La organización no presenta presentaciones en vivo de una naturaleza sexual pruriente ni deriva directa o indirectamente más que los ingresos brutos de minimis a través de la venta de productos o servicios, o la presentación de representaciones o exhibiciones, de naturaleza sexual pruriente.\n- La organización no se dedica al cabildeo.\n- La organización no puede ser una entidad gubernamental estatal, local o municipal y no puede ser miembro del Congreso.",
-        "zh": "您，您的首席执行官或具有同等能力的人是否能够证明这一点（此问题是为了确定是否有资格获得联邦小企业管理局EIDL）\n-该组织未从事任何非法活动（由联邦准则定义）。\n-拥有50％或以上所有权的组织的负责人，对子女抚养义务的拖欠不得超过六十（60）天。\n-申请人不是水产养殖企业，农业合作社或苗圃以外的农业企业（例如农场）。\n-该组织没有通过多姿多彩的性行为现场表演或直接或间接地通过销售产品或服务，或以多姿多彩的性行为进行描绘或展示而获得的总收入不低于微薄的总收入。\n-该组织不从事游说活动\n-该组织不能是州，地方或市政府实体，也不能是国会议员。"
+        "en": "Are you, your chief executive officer or the equivalent able to certify that:",
+        "es": "¿Es usted, su director ejecutivo o el equivalente capaz de certificar eso?",
+        "zh": "您，您的首席执行官或具有同等能力的人是否能够证明这一点（此问题是为了确定是否有资格获得联邦小企业管理局EIDL）"
+      },
+      "name2": {
+        "en": "- The organization is not engaged in any illegal activity (as defined by Federal guidelines). \n- No principal of the organization with a 50 percent or greater ownership interest is more than sixty (60) days delinquent on child support obligations.\n- Applicant is not an agricultural enterprise (e.g., farm), other than an aquaculture enterprise, agricultural cooperative, or nursery. \n- The organization does not present live performances of a prurient sexual nature or derive directly or indirectly more than de minimis gross revenue through the sale of products or services, or the presentation of any depictions or displays, of a prurient sexual nature. \n- The organization is not in the business of lobbying \n- The organization cannot be a state, local, or municipal government entity and cannot be a member of Congress.",
+        "es": "- La organización no participa en ninguna actividad ilegal (como se define en las pautas federales).\n- Ningún director de la organización con un interés de propiedad del 50 por ciento o más tiene más de sesenta (60) días de atraso en las obligaciones de manutención infantil.\n- El solicitante no es una empresa agrícola (por ejemplo, una granja), que no sea una empresa acuícola, una cooperativa agrícola o un vivero.\n- La organización no presenta presentaciones en vivo de una naturaleza sexual pruriente ni deriva directa o indirectamente más que los ingresos brutos de minimis a través de la venta de productos o servicios, o la presentación de representaciones o exhibiciones, de naturaleza sexual pruriente.\n- La organización no se dedica al cabildeo.\n- La organización no puede ser una entidad gubernamental estatal, local o municipal y no puede ser miembro del Congreso.",
+        "zh": "\n-该组织未从事任何非法活动（由联邦准则定义）。\n-拥有50％或以上所有权的组织的负责人，对子女抚养义务的拖欠不得超过六十（60）天。\n-申请人不是水产养殖企业，农业合作社或苗圃以外的农业企业（例如农场）。\n-该组织没有通过多姿多彩的性行为现场表演或直接或间接地通过销售产品或服务，或以多姿多彩的性行为进行描绘或展示而获得的总收入不低于微薄的总收入。\n-该组织不从事游说活动\n-该组织不能是州，地方或市政府实体，也不能是国会议员。"
       },
       "type": "boolean",
       "required": true

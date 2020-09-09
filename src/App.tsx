@@ -7,10 +7,9 @@ import FormApp from "./components/FormApp";
 import { LanguageProvider } from "./contexts/language";
 import { FormProvider } from "~/contexts/form";
 import Landing from "./components/Landing";
-import OldQuestionnaire from "./components/OldQuestionnaire";
+import OldQuestionnaire from "./components/old-OldQuestionnaire";
 import PPPLoanInfo from "./components/PPPLoanInfo";
 import Results from "./components/Results";
-// import OldResults from "./components/OldResults";
 
 import "./App.scss";
 

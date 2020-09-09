@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 
-import "./new_results.scss";
+import "./results.scss";
 
 const pppLenders = [
   {
