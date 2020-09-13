@@ -1,7 +1,7 @@
 // @ts-nocheck
 import React, { useEffect , useState} from "react";
 
-import "./new_results.scss";
+import "./results.scss";
 
 const Tabsbar: React.FC = (props) => {
   const [activeTab, setActiveTab] = useState('ppp');

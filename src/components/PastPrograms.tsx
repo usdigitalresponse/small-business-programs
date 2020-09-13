@@ -5,7 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import "./form-style.scss";
-import "./new_results.scss";
+import "./results.scss";
 
 const PastPrograms: React.FC = () => {
 

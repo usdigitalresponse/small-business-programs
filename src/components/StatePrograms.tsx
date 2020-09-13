@@ -1,13 +1,8 @@
 // @ts-nocheck
-
 import React, { useEffect } from "react";
-import { useLocation, useHistory } from "react-router-dom";
-
-import Header from "./Header";
-import Footer from "./Footer";
 
 import "./form-style.scss";
-import "./new_results.scss";
+import "./results.scss";
 
 const StatePrograms: React.FC = (props) => {
 
@@ -43,17 +38,18 @@ const StatePrograms: React.FC = (props) => {
             :
             <p>{program.who}</p>
         }
-        <button
-        className="usa-button eidl-cta"
-        data-ga-label={program.id}
-        onClick={(e) => {
-          e.preventDefault();
-          window.open(program.url, '_blank')
-          }}
-        type="button"
+        <a
+          className="usa-button"
+          data-ga-label={program.id}
+          onClick={(e) => {
+            e.preventDefault();
+            window.open(program.url, '_blank')
+            }}
+          type="button"
+          href="#"
       >
         Apply Now
-      </button>
+      </a>
       </div>
     )
   });

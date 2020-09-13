@@ -4,7 +4,7 @@ import { useLocation, useHistory } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
 
-import "./new_results.scss";
+import "./results.scss";
 
 const EIDLProgramSection: React.FC = () => {
 

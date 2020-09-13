@@ -68,11 +68,15 @@ const Landing: React.FC<Props> = (props) => {
                 {/* <p>
                   UPDATE: The federal Payroll Protection Program has been extended to August 8, 2020. Find a lender and complete your application before the deadline.
                 </p> */}
-                <Link to={ca ? "/california/questions" : pitt ? "/pittsburgh/questions" : hawaii ? "/hawaii/questions" : "/questions"}>
-                  <button className="usa-button usa-button--big">
-                    Get Started
-                  </button>
-                </Link>
+          
+                  <Link 
+                    to={ca ? "/california/questions" : pitt ? "/pittsburgh/questions" : hawaii ? "/hawaii/questions" : "/questions"}
+                    role="button"
+                    className="usa-button usa-button--big"
+                    >
+                      Get Started
+                  </Link>
+
               </div>
               <section>
                 {/* <h2>Who is it for?</h2> */}
@@ -84,7 +88,7 @@ const Landing: React.FC<Props> = (props) => {
                   <li>Contractors, freelancers, and gig workers</li>
                   <li>Small business with fewer than 500 employees (including C Corp, S Corp, LLC)</li>
                 </ul>
-                <p>If you have more than 500 employees, check the <a href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
+                <p>If you have more than 500 employees, check the <a className="link-in-text" href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
                   Small Business Administration size standards </a> to find loans specific to your industry.</p>
               </section>
               {/* <section id="government-partners">
@@ -104,7 +108,7 @@ const Landing: React.FC<Props> = (props) => {
             <div className="col-md-6 d-none d-md-block">
               <img
                 src="/smb_humans.svg"
-                alt="Person getting money"
+                alt="Graphic of a handdrawn women of color receiving money. We hope to better support small minority-owned businesses with this tool."
               ></img>
             </div>
           </div>

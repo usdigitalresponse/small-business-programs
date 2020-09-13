@@ -25,7 +25,6 @@ const FormApp: React.FC<Props> = (props) => {
   const { ca, pitt, hawaii } = props;
   const [back, next, complete] = useFormDictionary("back", "next", "complete");
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-
   const [windowWidth, setWindowWidth] = useState(0);
 
   const updateDimensions = () => {
@@ -47,8 +46,8 @@ const FormApp: React.FC<Props> = (props) => {
     form: { questions },
   } = useForm();
   
-
   let filteredQuestions = questions;
+  
   if (!ca && !pitt && !hawaii) {
     // This is a temporary fix until we flush out branching better
     filteredQuestions = filteredQuestions.filter((q) => !q.ca_only && !q.pitt_only && !q.hawaii_only);
@@ -129,7 +128,6 @@ const FormApp: React.FC<Props> = (props) => {
                   </Box>
                 </Box> */}
                 <Form question={filteredQuestions[currentIndex]} />
-
                 {currentIndex + 1 < filteredQuestions.length ? (
                   <Button onClick={onClickNext} size="large">
                     {next}

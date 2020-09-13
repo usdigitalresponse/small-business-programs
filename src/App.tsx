@@ -7,10 +7,9 @@ import FormApp from "./components/FormApp";
 import { LanguageProvider } from "./contexts/language";
 import { FormProvider } from "~/contexts/form";
 import Landing from "./components/Landing";
-import OldQuestionnaire from "./components/OldQuestionnaire";
+import OldQuestionnaire from "./components/old-OldQuestionnaire";
 import PPPLoanInfo from "./components/PPPLoanInfo";
-import Results from "./components/new_Results";
-// import OldResults from "./components/OldResults";
+import Results from "./components/Results";
 
 import "./App.scss";
 
@@ -138,7 +137,9 @@ function App() {
               <PPPLoanInfo />
             </Route>
             <Route exact path="/results">
-              <Results />
+              <FormProvider>
+                <Results />
+              </FormProvider>
             </Route>
             <Route exact path="/">
               <Landing></Landing>

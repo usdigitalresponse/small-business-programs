@@ -10,7 +10,6 @@ import Multiselect from '../components/form-components/Multiselect'
 import PhoneNumber from '../components/form-components/PhoneNumber'
 import TextArea from '../components/form-components/TextArea'
 
-
 export function initializeForm(): RawForm {
   const rawForm = form
 
@@ -91,5 +90,6 @@ const typeComponentMappings: { [type: string]: React.FC } = {
 //   'address_picker' | 'phone' | 'ssn' | 'address' | 'integer' | 'dollar-amount'
 
 export function getComponent(type: QuestionType): React.FC {
+  console.log('type', type)
   return typeComponentMappings[type] || TextInput
 }

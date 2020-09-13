@@ -19,7 +19,9 @@ const Question: React.FC<Props> = (props) => {
 
   // simple formatting for the question text
   const text = question.name.replace(/\n/g, "\n<br/>")
+  const text2 = question.name2?.replace(/\n/g, "\n<br/>")
 
+  console.log('question text2', text2)
   return (
     <Box direction="column" margin={{ bottom: 'small' }}>
       <Box 
@@ -33,8 +35,12 @@ const Question: React.FC<Props> = (props) => {
           margin={{ top: 'large', bottom: 'medium'}}
           weight="bold"
         >
-          {<span className="foo" dangerouslySetInnerHTML={{__html: text}} />}
+          {<h1 id="question-text" dangerouslySetInnerHTML={{__html: text}} />}
         </Text>
+        {question.name2 &&
+          <Text>
+            {<h2 id="question-text2" dangerouslySetInnerHTML={{__html: text2}} />}
+          </Text>}
       </Box>
       <Component width="100%" question={question} />
       <Box margin={{ top: 'xsmall' }}>

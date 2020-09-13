@@ -30,6 +30,7 @@ const Select: React.FC<Props> = (props) => {
       onChange={({ option }) => setValue(option)}
       id={question.id}
       name={question.name}
+      focusIndicator
     />
   )
 }

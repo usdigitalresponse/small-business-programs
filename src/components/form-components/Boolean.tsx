@@ -23,9 +23,7 @@ const Boolean: React.FC<Props> = ({ question }) => {
     label: no
   }]
 
-
   const [value, setValue] = useFormField(question.id)
-  console.log(question, value)
 
   return <RadioButtonGroup name={question.id} options={options} value={value} onChange={e => setValue(e.target.value)}/>
 }
