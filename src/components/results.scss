@@ -163,7 +163,6 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  width: 100vh;
   background-color: white;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -202,6 +201,16 @@ p {
 .tab-link .current {
   font-weight: 700px;
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    padding-right: 15px;
+  }
+
+  .sidebar-container {
+    display: none;
+  }
 }
 
 

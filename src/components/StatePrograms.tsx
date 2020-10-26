@@ -47,9 +47,9 @@ const StatePrograms: React.FC = (props) => {
             }}
           type="button"
           href="#"
-      >
-        Apply Now
-      </a>
+        >
+          Apply Now
+        </a>
       </div>
     )
   });
