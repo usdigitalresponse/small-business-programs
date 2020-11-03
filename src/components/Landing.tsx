@@ -61,7 +61,7 @@ const Landing: React.FC<Props> = (props) => {
           <div className="row">
             <div className="col-md-6">
               <div>
-                <h1>KP - Find COVID-19 financial assistance for your business</h1>
+                <h1>Find COVID-19 financial assistance for your business</h1>
                 <p>
                   Answer a few questions to find loans, funding alternatives, and support.
                 </p>
@@ -120,3 +120,4 @@ const Landing: React.FC<Props> = (props) => {
 };
 
 export default Landing;
+
