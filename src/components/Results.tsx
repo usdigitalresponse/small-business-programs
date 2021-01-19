@@ -16,9 +16,9 @@ import "./results.scss";
 import "./index.scss";
 
 const allNationalPrograms = [
-  // 'ppp',
-  // 'eidl',
-  // 'sba-debt'
+   'ppp',
+   'eidl',
+   'sba-debt'
 ];
 
 const allStatePrograms = [
