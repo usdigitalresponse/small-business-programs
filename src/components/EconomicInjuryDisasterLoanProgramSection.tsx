@@ -37,9 +37,7 @@ const EIDLProgramSection: React.FC = () => {
           <li>
           No personal guarantee required below $200K
           </li>
-          <li>
-          This loan advance will not have to be repaid
-          </li>
+
         </ul>
       </div>
       <p>Complete your application on the SBA EIDL site</p>
