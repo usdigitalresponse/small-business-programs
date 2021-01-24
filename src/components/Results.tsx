@@ -100,7 +100,7 @@ const Results: React.FC = () => {
                 />
               } 
               <a name="eidl"></a>
-              {eligibleProgramIds.some(program => program.id === "eidl") && 
+              {filteredNationalPrograms.some(program => program.id === "eidl") && 
                 <EIDLProgramSection
                   program={filteredNationalPrograms.filter(program => program.id === "eidl")}
                 />
