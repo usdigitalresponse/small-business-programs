@@ -38,7 +38,7 @@ const ResultSidebar: React.FC = () => {
   return (
     <div>
       <label className="top-label">
-        Extended to August 8, 2020
+        Second Round PPP is now available.
       </label>
       <h2 className="title">
         Payroll Protection Program

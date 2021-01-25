@@ -14,11 +14,11 @@ const pppLenders = [
     subtext: '',
     url: 'https://www.fundingcircle.com/us/paycheck-protection-program-loans/'
   },
-  {
-    name: 'Kabbage',
-    subtext: 'Kabbage can only process loans of up to $2 million',
-    url: 'https://www.kabbage.com/paycheck-protection-program-loans/'
-  },
+//  {
+//    name: 'Kabbage',
+//    subtext: 'Kabbage can only process loans of up to $2 million',
+//    url: 'https://www.kabbage.com/paycheck-protection-program-loans/'
+//  },
   {
     name: 'NewTek Small Business Finance',
     subtext: '',
@@ -36,7 +36,7 @@ const PPPSection: React.FC = () => {
   return (
     <div className="loan-container" id="ppp">
       <label className="top-label">
-        Extended to August 8, 2020
+        Second Round PPP is now available.
       </label>
       <h2 className="title">
         Payroll Protection Program

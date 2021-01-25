@@ -11,7 +11,7 @@ const EIDLProgramSection: React.FC = () => {
   return (
     <div className="loan-container" id="eidl">
       <label className="top-label">
-        Apply by Dec 31, 2020
+
       </label>
       <h2 className="title">
         Economic Injury Disaster Loan Program
@@ -24,9 +24,7 @@ const EIDLProgramSection: React.FC = () => {
       </p>
       <div className="eidl-terms">
         <ul>
-          <li>
-          Advance/grant of up to $10K, within days after receipt of application
-          </li>
+
           <li>
           Interest rate ~3.75% (~2.75% for nonprofits)
           </li>
@@ -39,9 +37,7 @@ const EIDLProgramSection: React.FC = () => {
           <li>
           No personal guarantee required below $200K
           </li>
-          <li>
-          This loan advance will not have to be repaid
-          </li>
+
         </ul>
       </div>
       <p>Complete your application on the SBA EIDL site</p>

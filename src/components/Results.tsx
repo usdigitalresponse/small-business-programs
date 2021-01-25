@@ -16,9 +16,9 @@ import "./results.scss";
 import "./index.scss";
 
 const allNationalPrograms = [
-  // 'ppp',
-  // 'eidl',
-  // 'sba-debt'
+   'ppp',
+   'eidl',
+   'sba-debt'
 ];
 
 const allStatePrograms = [
@@ -104,7 +104,7 @@ const Results: React.FC = () => {
                 />
               } 
               <a name="eidl"></a>
-              {eligibleProgramIds.some(program => program.id === "eidl") && 
+              {filteredNationalPrograms.some(program => program.id === "eidl") && 
                 <EIDLProgramSection
                   program={filteredNationalPrograms.filter(program => program.id === "eidl")}
                 />
