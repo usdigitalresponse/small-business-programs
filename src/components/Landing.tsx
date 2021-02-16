@@ -36,62 +36,78 @@ const Landing: React.FC<Props> = (props) => {
   };
 
   return (
-    <div className="content-page">
-      <Helmet>
-        <meta property="og:title" content="COVID-19 SMB Loan Information" />
-        <meta
-          property="og:description"
-          content="Learn about support programs available to help stabilize your business."
-        />
-        <title>COVID-19 SMB Loan Information</title>
-        <meta
-          name="Description"
-          content="Learn about support programs available to help stabilize your business."
-        />
-      </Helmet>
-      <Header/>
-      <div className="container humans-image">
-        <img
-          src="/smb_humans.svg"
-          alt="Person getting money"
-        ></img>
-      </div>
-      <main>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div>
-                <h1>Find COVID-19 financial assistance for your business</h1>
-                <p>
-                  Answer a few questions to find loans, funding alternatives, and support.
-                </p>
-                {/* <p>
+      <div className="content-page">
+        <Helmet>
+          <meta property="og:title" content="COVID-19 SMB Loan Information" />
+          <meta
+              property="og:description"
+              content="Learn about support programs available to help stabilize your business."
+          />
+          <title>COVID-19 SMB Loan Information</title>
+          <meta
+              name="Description"
+              content="Learn about support programs available to help stabilize your business."
+          />
+        </Helmet>
+        <Header/>
+        <div className="container humans-image">
+          <img
+              src="/smb_humans.svg"
+              alt="Person getting money"
+          ></img>
+        </div>
+        <main>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div>
+                  <h1>Find COVID-19 assistance for your business</h1>
+                  <p>
+                    Answer a few questions to find loans, funding alternatives, and support.
+                  </p>
+                  {/* <p>
                   UPDATE: The federal Payroll Protection Program has been extended to August 8, 2020. Find a lender and complete your application before the deadline.
                 </p> */}
-          
-                  <Link 
-                    to={ca ? "/california/questions" : pitt ? "/pittsburgh/questions" : hawaii ? "/hawaii/questions" : "/questions"}
-                    role="button"
-                    className="usa-button usa-button--big"
-                    >
-                      Get Started
+
+                  <Link
+                      to={ca ? "/california/questions" : pitt ? "/pittsburgh/questions" : hawaii ? "/hawaii/questions" : "/questions"}
+                      role="button"
+                      className="usa-button usa-button--big"
+                  >
+                    Get Started
                   </Link>
 
-              </div>
-              <section>
-                {/* <h2>Who is it for?</h2> */}
-                <p>This free tool is for U.S.-based businesses including:</p>
-                <ul>
-                  <li>Non-profits</li>
-                  <li>Tribal business concerns</li>
-                  <li>Self-employed individuals</li>
-                  <li>Contractors, freelancers, and gig workers</li>
-                  <li>Small business with fewer than 500 employees (including C Corp, S Corp, LLC)</li>
-                </ul>
-                <p>If you have more than 500 employees, check the <a className="link-in-text" href = "https://www.sba.gov/document/support--table-size-standards" target="_blank">
-                  Small Business Administration size standards </a> to find loans specific to your industry.</p>
-              </section>
-              {/* <section id="government-partners">
+                </div>
+                <section>
+                  Deadline to apply March 31, 2021
+                </section>
+                <section>
+                  {/* <h2>Who is it for?</h2> */}
+                  <p>This free tool is for US-based businesses including:</p>
+                  <ul>
+                    <li>501(c)(6) nonprofits</li>
+                    <li>Contractors, freelancers, and gig workers</li>
+                    <li>Destination marketing organizations</li>
+                    <li>News outlets with fewer than 500 employees per location</li>
+                    <li>Self-employed individuals</li>
+                    <li>Small business with fewer than 500 employees (including C Corp, S Corp, LLC)</li>
+                    <li>Tribal business concerns</li>
+                  </ul>
+
+                </section>
+
+                <section>
+
+                  If your business has already received a PPP loan, you may be eligible for a second one.
+
+                </section>
+                <section>
+
+                  More than 500 employees? Check the Small Business Administration size standards for loans specific to your industry.
+
+
+                </section>
+                {/* <section id="government-partners">
                 <h2>Government partners</h2>
                 <p>
                   To get a free tool built for your agency or to include your state's programs, please email the {" "}
@@ -104,20 +120,19 @@ const Landing: React.FC<Props> = (props) => {
                   .
                 </p>
               </section> */}
-            </div>
-            <div className="col-md-6 d-none d-md-block">
-              <img
-                src="/smb_humans.svg"
-                alt="Graphic of a handdrawn women of color receiving money. We hope to better support small minority-owned businesses with this tool."
-              ></img>
+              </div>
+              <div className="col-md-6 d-none d-md-block">
+                <img
+                    src="/smb_humans.svg"
+                    alt="Graphic of a handdrawn women of color receiving money. We hope to better support small minority-owned businesses with this tool."
+                ></img>
+              </div>
             </div>
           </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
+        </main>
+        <Footer />
+      </div>
   );
 };
 
 export default Landing;
-
