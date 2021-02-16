@@ -23,12 +23,8 @@ const pppLenders = [
     name: 'NewTek Small Business Finance',
     subtext: '',
     url: 'https://partners.newtekone.com/caresact/business-lending/'
-  },
-  {
-    name: 'OnDeck',
-    subtext: '',
-    url: 'https://online.ondeck.com/?sba_ppp=true&_ga=2.120667080.1313386691.1588787633-1585010504.1588109996'
-  },
+  }
+
 ]
 
 const PPPSection: React.FC = () => {
