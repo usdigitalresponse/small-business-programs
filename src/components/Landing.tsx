@@ -85,7 +85,7 @@ const Landing: React.FC<Props> = (props) => {
                   {/* <h2>Who is it for?</h2> */}
                   <p>This free tool is for US-based businesses including:</p>
                   <ul>
-                    <li>501(c)(6) nonprofits</li>
+                    <li>501(c)(3) or 501(c)(6) nonprofits</li>
                     <li>Contractors, freelancers, and gig workers</li>
                     <li>Destination marketing organizations</li>
                     <li>News outlets with fewer than 500 employees per location</li>
