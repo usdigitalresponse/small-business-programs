@@ -36,7 +36,7 @@ const PPPSection: React.FC = () => {
   return (
     <div className="loan-container" id="ppp">
       <label className="top-label">
-        First and Second Draws of the PPP are now available.
+        First and second draws of the PPP are now available.
       </label>
       <h2 className="title">
         Payroll Protection Program
