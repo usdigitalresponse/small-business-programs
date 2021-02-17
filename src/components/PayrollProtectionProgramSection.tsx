@@ -23,12 +23,8 @@ const pppLenders = [
     name: 'NewTek Small Business Finance',
     subtext: '',
     url: 'https://partners.newtekone.com/caresact/business-lending/'
-  },
-  {
-    name: 'OnDeck',
-    subtext: '',
-    url: 'https://online.ondeck.com/?sba_ppp=true&_ga=2.120667080.1313386691.1588787633-1585010504.1588109996'
-  },
+  }
+
 ]
 
 const PPPSection: React.FC = () => {
@@ -36,7 +32,7 @@ const PPPSection: React.FC = () => {
   return (
     <div className="loan-container" id="ppp">
       <label className="top-label">
-        Second Round PPP is now available.
+        First and second draws of the PPP are now available.
       </label>
       <h2 className="title">
         Payroll Protection Program
@@ -44,7 +40,12 @@ const PPPSection: React.FC = () => {
       <p className="loan-description">
       For this federal program, you can submit multiple applications through different lenders to maximize your chances of receiving a loan. However, you can only accept one loan for your business.
       </p>
-      <p>
+        <p>
+            Business who have already received a first loan are eligible for a second loan if
+            they have no more than 300 employees and can show a 25% drop in gross receipts in any 2020 quarter compared to the same quarter in 2019
+        </p>
+
+        <p>
       These lenders are online and you can apply right now.
       </p>
       <div className="ppp-lenders-container">
