@@ -98,7 +98,7 @@ const Landing: React.FC<Props> = (props) => {
 
                 <section>
 
-                  If your business has already received a PPP loan, you may be eligible for a second one.
+                  <b>If your business has already received a PPP loan, you may be eligible for a second one.</b>
 
                 </section>
                 <section>
