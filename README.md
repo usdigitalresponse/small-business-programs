@@ -1,3 +1,6 @@
+⚠️ **This project is not actively maintained!** ⚠️ Most of the relief programs it documents have ended (or are at least not accepting new applications) and this repository is not receiving bug fixes or security updates. We will be archiving it soon.
+
+
 # small-business-programs
 
 Survey to recommend programs for small businesses
